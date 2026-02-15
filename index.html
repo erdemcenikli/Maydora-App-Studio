@@ -3,107 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maydora App Studio | Premium Mobile Experiences</title>
-    <meta name="description" content="Maydora App Studio creates innovative and beautiful mobile applications for iOS and Android.">
+    <title>Maydora App Studio | High-Performing Mobile Product Studio</title>
+    <meta name="description" content="Maydora App Studio builds, launches, and scales mobile products through integrated strategy, design, engineering, and growth.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">Maydora</a>
-            <nav class="nav">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true">
+        <span class="scroll-progress-bar"></span>
+    </div>
+
+    <header class="site-header" aria-label="Primary">
+        <div class="container header-inner">
+            <a class="brand" href="#home">Maydora App Studio</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="nav-toggle-label">Menu</span>
+                <span class="nav-toggle-icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <nav id="primary-navigation" class="site-nav" aria-label="Main navigation">
                 <ul class="nav-list">
-                    <li><a href="#work" class="nav-link">Work</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#studio">Studio</a></li>
+                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#process">Process</a></li>
+                    <li><a class="nav-link" href="#technology">Technology</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="nav-backdrop" hidden></div>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-container">
-                <h1 class="hero-title fade-in">Crafting Digital <br> <span class="gradient-text">Masterpieces</span></h1>
-                <p class="hero-subtitle fade-in delay-1">We build premium mobile applications that inspire and engage.</p>
-                <div class="hero-cta fade-in delay-2">
-                    <a href="#work" class="btn btn-primary">Our Portfolio</a>
+    <main id="main-content">
+        <section id="home" class="hero section-observe" aria-labelledby="hero-title">
+            <div class="hero-bg" aria-hidden="true">
+                <span class="glow glow-cyan"></span>
+                <span class="glow glow-amber"></span>
+                <span class="mesh mesh-a"></span>
+                <span class="mesh mesh-b"></span>
+                <span class="grid-lines"></span>
+            </div>
+            <div class="container hero-layout">
+                <div class="hero-content reveal" data-reveal="up">
+                    <p class="eyebrow">Mobile Product Studio</p>
+                    <h1 id="hero-title">The App Studio Behind <span class="hero-emphasis">High-Performing Mobile Products.</span></h1>
+                    <p class="lead">Maydora App Studio builds, launches, and scales mobile products through integrated strategy, design, engineering, and growth.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="mailto:info@maydora.com">Start Your Project</a>
+                        <a class="btn btn-secondary" href="#services">Explore Capabilities</a>
+                    </div>
+                </div>
+                <div class="hero-panel reveal" data-reveal="right">
+                    <div class="panel-shell">
+                        <p class="panel-label">Studio Operating Rhythm</p>
+                        <ul class="panel-list">
+                            <li>Weekly product planning and prioritization</li>
+                            <li>Design and engineering handoff in shared sprints</li>
+                            <li>Continuous release, measurement, and iteration loops</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="hero-background"></div>
         </section>
 
-        <section id="work" class="section work">
+        <section class="section stats section-observe" aria-labelledby="impact-title">
             <div class="container">
-                <h2 class="section-title fade-in-scroll">Selected Works</h2>
-                <div class="work-grid">
-                    <!-- Placeholder Project 1 -->
-                    <article class="project-card fade-in-scroll">
-                        <div class="project-image">
-                            <div class="placeholder-img">App Screen</div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Health & Fitness</span>
-                            <h3 class="project-title">ZenFlow Yoga</h3>
-                            <p class="project-desc">A mindful yoga companion app with personalized routines.</p>
-                        </div>
+                <div class="section-heading reveal" data-reveal="up">
+                    <p class="eyebrow">Execution Snapshot</p>
+                    <h2 id="impact-title">Operating at Product Speed With Measurable Outcomes.</h2>
+                </div>
+                <div class="stats-grid">
+                    <article class="stat-card reveal" data-reveal="up">
+                        <p class="stat-label">Products Launched</p>
+                        <p class="stat-value" data-count="120" data-suffix="+">120+</p>
+                        <p class="stat-caption">Consumer and B2B products shipped from MVP through growth-stage optimization.</p>
                     </article>
-
-                    <!-- Placeholder Project 2 -->
-                    <article class="project-card fade-in-scroll delay-1">
-                        <div class="project-image">
-                            <div class="placeholder-img">App Screen</div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Productivity</span>
-                            <h3 class="project-title">TaskMaster Pro</h3>
-                            <p class="project-desc">Streamline your workflow with intelligent task management.</p>
-                        </div>
+                    <article class="stat-card reveal" data-reveal="up">
+                        <p class="stat-label">Avg. Sprint Cadence</p>
+                        <p class="stat-value" data-count="7" data-suffix=" Days">7 Days</p>
+                        <p class="stat-caption">Cross-functional planning, design, and engineering loops designed for continuous release.</p>
                     </article>
-
-                    <!-- Placeholder Project 3 -->
-                    <article class="project-card fade-in-scroll delay-2">
-                        <div class="project-image">
-                            <div class="placeholder-img">App Screen</div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-category">Finance</span>
-                            <h3 class="project-title">CoinKeeper</h3>
-                            <p class="project-desc">Track expenses and manage your budget with ease.</p>
-                        </div>
+                    <article class="stat-card reveal" data-reveal="up">
+                        <p class="stat-label">Experiment Velocity</p>
+                        <p class="stat-value" data-count="32" data-suffix="/Month">32/Month</p>
+                        <p class="stat-caption">Structured A/B tests and funnel experiments focused on retention and monetization impact.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section about">
-            <div class="container about-container">
-                <div class="about-content fade-in-scroll">
-                    <h2 class="section-title">Our Philosophy</h2>
-                    <p class="about-text">At Maydora, we believe that technology should be both beautiful and functional. Our team of passionate designers and developers work tirelessly to create apps that stand out in the crowded marketplace. We focus on user-centric design, robust performance, and pixel-perfect aesthetics.</p>
+        <section id="studio" class="section studio section-observe" aria-labelledby="studio-title">
+            <div class="container studio-grid">
+                <div class="section-heading reveal" data-reveal="up">
+                    <p class="eyebrow">Studio Model</p>
+                    <h2 id="studio-title">One Studio. End-to-End Delivery.</h2>
+                </div>
+                <div class="studio-copy reveal" data-reveal="up">
+                    <p>Maydora App Studio runs with cross-functional pods that combine product strategy, UX/UI design, iOS and Android engineering, QA, and growth operations.</p>
+                    <p>Each engagement moves through a unified execution system, so decisions stay aligned from first roadmap workshop to release cycles, experimentation, and long-term scaling.</p>
+                    <ul class="studio-pillars" aria-label="Core studio disciplines">
+                        <li>Product Strategy</li>
+                        <li>Design Systems</li>
+                        <li>Mobile Engineering</li>
+                        <li>Growth Operations</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section contact">
-            <div class="container contact-container">
-                <h2 class="contact-title fade-in-scroll">Ready to start your project?</h2>
-                <a href="mailto:hello@maydora.com" class="btn btn-primary fade-in-scroll">Get in Touch</a>
+        <section id="services" class="section services section-observe" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-heading reveal" data-reveal="up">
+                    <p class="eyebrow">Capabilities</p>
+                    <h2 id="services-title">Build With a Team Designed for Full Product Lifecycle.</h2>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal" data-reveal="up" data-index="01">
+                        <h3>Product Strategy</h3>
+                        <p>Opportunity mapping, roadmap definition, feature prioritization, and measurable launch plans aligned with clear business goals.</p>
+                    </article>
+                    <article class="service-card reveal" data-reveal="up" data-index="02">
+                        <h3>UX/UI Design</h3>
+                        <p>Interface systems and interaction design that improve adoption, strengthen clarity, and reduce friction in key user journeys.</p>
+                    </article>
+                    <article class="service-card reveal" data-reveal="up" data-index="03">
+                        <h3>iOS &amp; Android Engineering</h3>
+                        <p>Production-grade native and cross-platform development with scalable architecture, release readiness, and reliable performance.</p>
+                    </article>
+                    <article class="service-card reveal" data-reveal="up" data-index="04">
+                        <h3>Subscription &amp; Monetization</h3>
+                        <p>Paywall systems, packaging strategy, pricing experiments, and retention flows built to increase sustainable recurring revenue.</p>
+                    </article>
+                    <article class="service-card reveal" data-reveal="up" data-index="05">
+                        <h3>ASO &amp; Growth Creative</h3>
+                        <p>Store positioning, metadata strategy, and high-performing creative assets that improve discovery and conversion quality.</p>
+                    </article>
+                    <article class="service-card reveal" data-reveal="up" data-index="06">
+                        <h3>Analytics &amp; Experimentation</h3>
+                        <p>Event schema design, dashboarding, cohort analysis, and structured A/B testing to support fast evidence-based decisions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section process section-observe" aria-labelledby="process-title">
+            <div class="container process-layout">
+                <div class="section-heading reveal" data-reveal="up">
+                    <p class="eyebrow">Execution Process</p>
+                    <h2 id="process-title">Discover, Design, Build, Scale.</h2>
+                </div>
+                <ol class="process-timeline">
+                    <li class="timeline-item reveal" data-reveal="left">
+                        <span class="step-index">01</span>
+                        <div>
+                            <h3>Discover</h3>
+                            <p>Stakeholder workshops, market scan, technical audit, and KPI alignment to define scope and expected outcomes.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal" data-reveal="left">
+                        <span class="step-index">02</span>
+                        <div>
+                            <h3>Design</h3>
+                            <p>Product architecture, flows, prototypes, and design system decisions validated through fast review loops.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal" data-reveal="left">
+                        <span class="step-index">03</span>
+                        <div>
+                            <h3>Build</h3>
+                            <p>Sprint-based development, QA automation coverage, and release operations with transparent progress checkpoints.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal" data-reveal="left">
+                        <span class="step-index">04</span>
+                        <div>
+                            <h3>Scale</h3>
+                            <p>Performance monitoring, retention experiments, monetization optimization, and growth operations after launch.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="technology" class="section technology section-observe" aria-labelledby="technology-title">
+            <div class="container technology-layout">
+                <div class="section-heading reveal" data-reveal="up">
+                    <p class="eyebrow">Technology</p>
+                    <h2 id="technology-title">Built on Proven Mobile and Growth Infrastructure.</h2>
+                    <p class="section-intro">Our teams combine modern product engineering with analytics and experimentation infrastructure to move from idea to measurable scale.</p>
+                </div>
+                <ul class="chip-list reveal" data-reveal="up" aria-label="Technology stack">
+                    <li>Swift</li>
+                    <li>Kotlin</li>
+                    <li>Flutter</li>
+                    <li>React Native</li>
+                    <li>Firebase</li>
+                    <li>Google Cloud</li>
+                    <li>Amplitude</li>
+                    <li>BigQuery</li>
+                    <li>RevenueCat</li>
+                    <li>AppsFlyer</li>
+                    <li>Mixpanel</li>
+                    <li>Looker Studio</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact section-observe" aria-labelledby="contact-title">
+            <div class="container contact-panel reveal" data-reveal="up">
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title">Ready to Build Your Next Mobile Product?</h2>
+                <p>Let’s discuss your roadmap, technical scope, and growth plan. We’ll structure the right team and execution path for your goals.</p>
+                <a class="btn btn-primary" href="mailto:info@maydora.com">Start a Conversation</a>
+                <p class="contact-email">info@maydora.com</p>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <p class="copyright">&copy; 2026 Maydora App Studio. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Instagram</a>
-            </div>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Maydora App Studio. All rights reserved.</p>
         </div>
     </footer>
 
